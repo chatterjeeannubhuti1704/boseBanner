@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #171717 !important;
+}
+
+header ul{
+    display: flex;
+    color: #fff;
+    justify-content: flex-end;
+    list-style: none;
+}
+header ul li{
+    font-size: 16px;
+    padding: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.sidebar, .hero-part, .hero-imgs{
+    position: relative;
+}
+.hero-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sidebar img{
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 999;
+}
+.b-img-initial{
+    transform: translate(-50px,100px);
+    z-index: 3;opacity: 0;
+}
+/* .o-img{
+   
+} */
+.o-img-initial{
+    opacity:0; z-index:1 ;transform: translate(63px, 87px);
+}
+.headphone-img{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+}
+.headphone-img-initial{
+    transform:translate(-328px, -127px) rotate(-7deg);
+}
+.se-img-initial{
+    transform: translate(177px,100px);z-index: 3;opacity: 0;
+}
+.buttons{
+    display: flex;
+    height: 36vh;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+.buttons a{
+    border-radius: 50px;
+    background: linear-gradient(90deg, #FFF 4.19%, rgba(208, 208, 208, 0.35) 93.89%);
+    color: #333;
+font-family: Bebas Neue;
+font-size: 28px;
+padding: 1rem 2rem;
+}
+.buttons a:hover{
+    color:#fff;
+    text-decoration: none;
+    border-radius: 50px;
+border: 1px solid #FFF;
+background: linear-gradient(90deg, #282828 4.19%, rgba(17, 17, 17, 0.35) 93.89%);
+box-shadow: 0px 10px 5px 0px rgba(84, 84, 84, 0.31);
+}
+
+.b-image-final{
+    transform: translate(0px,100px);
+    z-index: 3;
+    transition-duration: 1600ms;
+    transition-timing-function: ease-in-out;opacity: 1;
+}
+.headphone-image-final{
+    transform:translate(-328px, -127px) rotate(0deg);
+    transition-duration: 1600ms;
+    transition-timing-function: ease-in-out;
+}
+.se-image-final{
+    transform: translate(94px,100px);
+    z-index: 3;
+    transition-duration: 1600ms;
+    transition-timing-function: ease-in-out;opacity: 1;
+}
+.o-img-final{
+
+    z-index:1 ;transform: translate(63px, 87px);
+    transition-duration: 1600ms;
+    transition-timing-function: ease-in-out;opacity: 1;
+
+}
